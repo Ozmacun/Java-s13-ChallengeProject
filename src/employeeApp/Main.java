@@ -12,7 +12,16 @@ public class Main
      */
     private static void workWithData ()
     {
-
+        Employee employee = new Employee(2,"Tolga","tlgzmcn@gmail.com","12345", new String[5]);
+        employee.addHealthPlan(0,"Tolga");
+        System.out.println(employee);
+        System.out.println("-------------------------");
+        Company company = new Company(3,"Tolga A.Ş",-1,new String[8]);
+        company.addEmployee(3,"Leo");
+        System.out.println(company);
+        System.out.println("-------------------------");
+        Healthplan healthplan = new Healthplan(3,"Ahmet", Plan.name );
+        System.out.println(healthplan);
     }
 
     /**
